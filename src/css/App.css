@@ -1,0 +1,72 @@
+.marginZero{
+    margin: 0 !important;
+}
+
+.header{
+    height: 80px;
+}
+
+.header h4{
+    line-height: 80px !important;
+}
+
+.contentSide{
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+.contentSide ul li{
+    list-style-type: disc;
+}
+
+.orderMessageRow{
+    height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sticky Footer */
+.app{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+footer{
+    height: 30px;
+}
+
+footer h6{
+    line-height: 30px;
+}
+
+/* Input Tag */
+.input-field input[type=text]:focus + label {
+    color: #512da8 !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #512da8 !important;
+    box-shadow: 0 1px 0 0 #512da8 !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #512da8;
+}
+
+@media only screen and (max-width: 460px)  {
+    .header h4{
+        font-size: 1.44rem;
+    }
+}    
+
+@media only screen and (max-width: 340px)  {
+    #foodName + label{
+        font-size: 0.82rem;
+    }
+}    
