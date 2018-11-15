@@ -12,7 +12,7 @@ class PageNotFound extends Component {
                     <div className="container">
                         <div className="col s12">
                             <div className="center-align">
-                                <img src={Image} alt="Page Not Found" />
+                                <img src={Image} className="responsive-img" alt="Page Not Found" />
                             </div>
                             <div className="center-align">
                                 <Link to="" className="btn waves-effect waves-light deep-purple darken-2 hoverable" style={{ marginTop: "20px" }}>go to homepage</Link>
