@@ -9,10 +9,10 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 // Components imported from 'src/components'
 import Header from './components/Header';
-import HomePage from './components/HomePage';
+import Content from './components/Content';
 import OrderMessage from './components/OrderMessage';
 import Footer from './components/Footer';
-import PageNotFound from './components/pageNotFound';
+import PageNotFound from './components/PageNotFound';
 
 // Materialize CSS imported from 'node-modules folder'
 import 'materialize-css/dist/css/materialize.min.css';
@@ -29,7 +29,7 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route path="/thanks" component={OrderMessage} />
-            <Route exact path="/" component={HomePage} />
+            <Route exact path="/" component={Content} />
             <Route path="" component={PageNotFound} />
           </Switch>
         </BrowserRouter>
